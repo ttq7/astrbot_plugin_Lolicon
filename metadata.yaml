@@ -1,0 +1,6 @@
+name: 我要涩涩 # 这是你的插件的唯一识别名。
+desc: 一款基于Lolicon API的随机涩图插件。 # 插件的描述信息。
+help: 输入 /keyword 查看关键词回复帮助。 # 插件的帮助信息
+version: v1.1 # 插件版本号。格式：v1.1.1 或者 v1.1
+author: hello七七# 作者
+repo: https://github.com/ttq7/astrbot_plugin_setu # 插件的仓库地址
