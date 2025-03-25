@@ -129,7 +129,7 @@ def fetch_setu(
         print(f"Request Failed: {str(e)}")
         return None
 
-@register("astrbot_plugin_setu", "hello七七", "我要涩涩", "1.1", "https://github.com/yourname/astrbot_plugin_setu")
+@register("astrbot_plugin_setu", "hello七七", "我要涩涩", "1.1", "https://github.com/ttq7/astrbot_plugin_Lolicon")
 class ArknightsPlugin(Star):
     def __init__(self, context: Context):
         super().__init__(context)
