@@ -32,7 +32,7 @@ Lolicon API 存在请求频率限制（约 5 秒 / 次）
 图片缓存会在发送后自动删除
 部分图片可能因网络问题加载失败
 🛠️ 开发维护
-项目地址：GitHub 仓库
+项目地址：[GitHub 仓库](https://github.com/ttq7/astrbot_plugin_Lolicon)
 版本号：1.1
 作者：hello七七
 📜 完整代码
