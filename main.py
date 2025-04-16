@@ -114,7 +114,7 @@ async def fetch_setu(
         logger.error(f"Unexpected Error: {str(e)}")
         return None
 
-@register("astrbot_plugin_lolicon", "hello七七", "我要涩涩", "1.2", "https://github.com/ttq7/astrbot_plugin_Lolicon")
+@register("astrbot_plugin_lolicon", "hello七七", "我要涩涩", "1.3", "https://github.com/ttq7/astrbot_plugin_Lolicon")
 class ArknightsPlugin(Star):
     def __init__(self, context: Context):
         super().__init__(context)
