@@ -2,23 +2,6 @@ import os
 import asyncio
 import logging
 import aiofiles
-import requests
-from typing import List, Optional
-from astrbot.api.star import Context, Star, register
-from astrbot.api.event import filter, AstrMessageEvent, MessageEventResult
-from astrbot.api.event.filter import event_message_type, EventMessageType
-from astrbot.api.message_components import *
-
-logger = logging.getLogger(__name__)
-
-# 全局锁防止并发文件操作
-file_lock = asyncio.Lock()
-
-class ImageManager:
-    """图片管理类"""import os
-import asyncio
-import logging
-import aiofiles
 import aiohttp  
 from typing import List, Optional
 from astrbot.api.star import Context, Star, register
