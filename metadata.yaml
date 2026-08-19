@@ -1,6 +1,7 @@
-name: 我要涩涩 # 这是你的插件的唯一识别名。
-desc: 一款基于Lolicon API的随机涩图插件。 # 插件的描述信息。
-help: 输入 /keyword 查看关键词回复帮助。 # 插件的帮助信息
-version: v1.3 # 插件版本号。格式：v1.1.1 或者 v1.1
-author: hello七七# 作者
-repo: https://github.com/ttq7/astrbot_plugin_Lolicon # 插件的仓库地址
+name: 我要涩涩 # 插件唯一识别名
+desc: 基于 Lolicon API 的可配置随机涩图插件，支持触发词匹配模式、数据源切换、本地缓存池。 # 插件描述
+help: 在 WebUI 插件配置中设置触发词与匹配模式；默认触发词为 色图/涩图/瑟图，匹配模式 contains。 # 帮助信息
+version: v2.0 # 版本号
+author: hello七七 # 作者
+repo: https://github.com/ttq7/astrbot_plugin_Lolicon # 仓库地址
+astrbot_version: ">=4.0.0" # 兼容的 AstrBot 版本

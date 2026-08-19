@@ -1,0 +1,66 @@
+{
+  "match_mode": {
+    "description": "触发词匹配方式",
+    "type": "string",
+    "default": "contains",
+    "options": ["exact", "contains", "regex"],
+    "hint": "exact=完整短语匹配（原版行为，仅在消息等于触发词时响应，不易误触）；contains=子串匹配（消息包含触发词即响应，更宽松）；regex=正则表达式（每个触发词作为正则模式）"
+  },
+  "trigger_words": {
+    "description": "触发词列表",
+    "type": "list",
+    "default": ["色图", "涩图", "瑟图"],
+    "hint": "根据 match_mode 解释：exact 时作为完整短语；contains 时作为子串；regex 时每个元素作为正则模式"
+  },
+  "reply_style": {
+    "description": "回复风格",
+    "type": "string",
+    "default": "plain",
+    "options": ["plain", "playful"],
+    "hint": "plain=功能性简洁回复；playful=俏皮回复（还原原版语气）"
+  },
+  "r18": {
+    "description": "R18 等级",
+    "type": "int",
+    "default": 0,
+    "hint": "0=非 R18；1=仅 R18；2=混合（仅 lolicon 数据源支持）"
+  },
+  "data_source": {
+    "description": "图片数据源",
+    "type": "string",
+    "default": "lolicon",
+    "options": ["lolicon", "nyan"],
+    "hint": "lolicon=Lolicon API（api.lolicon.app，支持标签/宽高比/AI 排除等筛选）；nyan=sex.nyan.run API（直接返回图片二进制）"
+  },
+  "exclude_ai": {
+    "description": "排除 AI 生成图",
+    "type": "bool",
+    "default": true,
+    "hint": "仅 lolicon 数据源生效"
+  },
+  "aspect_ratio": {
+    "description": "宽高比筛选",
+    "type": "string",
+    "default": "gt1",
+    "options": ["", "gt1", "lt1", "eq1"],
+    "hint": "仅 lolicon 数据源生效。留空(空字符串)=不筛选；gt1=横图；lt1=竖图；eq1=方图"
+  },
+  "cache_size": {
+    "description": "缓存池目标数量",
+    "type": "int",
+    "default": 10,
+    "hint": "本地预缓存图片的目标数量，越大响应越快但占空间"
+  },
+  "refill_threshold": {
+    "description": "触发补充的阈值",
+    "type": "int",
+    "default": 5,
+    "hint": "库存低于此值时触发后台补充"
+  },
+  "refill_interval": {
+    "description": "后台巡检间隔（秒）",
+    "type": "int",
+    "default": 300,
+    "hint": "后台任务检查库存并补充的周期"
+  }
+}
